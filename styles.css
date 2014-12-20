@@ -3,3 +3,11 @@
 /* Note: an asteroid image is included in this repo.
 Feel free to use it if you like. */
 
+.field {
+  background-image: url("http://www.publicdomainpictures.net/pictures/10000/nahled/starry-night-871287410454UmtH.jpg");
+  display: block;
+  height: 30em;
+  width: 40em;
+  margin: auto;
+  }
+

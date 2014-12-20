@@ -1,16 +1,23 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <link rel='stylesheet' type='css' href='styles.css'> 
-  </head>
-  <body>
-    <div class="scoreboard">
-      <!-- Modify the scoreboard when important events occur in your game! -->
-      <div class="high">High score: <span>0</span></div>
-      <div class="current">Current score: <span>0</span></div>
-      <div class="collisions">Collisions: <span>0</span></div>
-    </div>
-    <script src="d3.js" charset="utf-8"></script>
-    <script src='watchout.js'></script>
-  </body>
+<head>
+  <title>Watchout!</title>
+  <link rel='stylesheet' type='css' href='styles.css'> 
+</head>
+<body>
+  <div>
+    <h1>Watchout!</h1>
+    <h3>Grab hold of the controls and guide the Millenium Falcon through the astroid field</h3>
+  </div>
+  <div class="scoreboard">
+    <!-- Modify the scoreboard when important events occur in your game! -->
+    <div class="high">High score: <span id='high-score'></span></div>
+    <div class="current">Current score: <span id='current-score'></span></div>
+    <div class="collisions">Collisions: <span id='collisions'></span></div>
+  </div>
+  <div class='field'>
+  </div>
+  <script src="d3.js" charset="utf-8"></script>
+  <script src='watchout.js'></script>
+</body>
 </html>
