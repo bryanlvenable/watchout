@@ -39,6 +39,35 @@
   };
 
   render = function(enemyData) {
-    
+    var enemies;
+
+    enemies = gameBoard.selectAll('circle.enemy').data(enemyData, function(d) {
+      return d.id;
+    });
+
+    enemies.enter().append('svg:circle').attr('class', 'enemy').attr('cx', function(enemy) {
+      return axes.x(enemy.x);
+    }).attr('cy', function(enemy) {
+      return axes.y(enemy.y);
+    }).attr('r', 0);
+    enemies.exit().remove();
   };
 }).call(this);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
