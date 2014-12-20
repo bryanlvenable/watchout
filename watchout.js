@@ -1,6 +1,6 @@
 // start slingin' some d3 here.
 (function(){
-  var gameOptions, gameStats;
+  var gameOptions, gameStats, axes, gameBoard, updateScore, updateHighScore, Player;
 
   gameOptions = {
     height: 450,
@@ -26,5 +26,19 @@
   updateHighScore = function(){
     gameStats.highScore = _.max(gameStats.highScore, gameStats.score);
     return d3.select('high-score').text(gameStats.highScore.toString());
+  };
+
+  createEnemies = function() {
+    return_.range(0, gameOptions.numberEnemies).map(function(i) {
+      return {
+        id: i,
+        x: Math.random() * 100,
+        y: Math.random() * 100
+      };
+    });
+  };
+
+  render = function(enemyData) {
+    
   };
 }).call(this);
