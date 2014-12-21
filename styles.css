@@ -2,13 +2,38 @@
 
 /* Note: an asteroid image is included in this repo.
 Feel free to use it if you like. */
-/*
+
+text
+body{
+  margin: 0em;
+  position: relative;
+}
+
 .field {
   background-image: url("http://www.publicdomainpictures.net/pictures/10000/nahled/starry-night-871287410454UmtH.jpg");
-  display: block;
-  height: 30em;
-  width: 40em;
-  margin: auto;
-  }
-  */
+}
+
+.asteroid {
+  background-image: url('asteroid.png');
+  background-repeat: no-repeat;
+  background-size: 50px 50px;
+  height: 50px;
+  width: 50px;
+  position: absolute;
+}
+
+.player {
+  background-image: url('Millenium Falcon - 01.png');
+  background-repeat: no-repeat;
+  position: absolute;
+}
+.scoreboard {
+  margin: 0em;
+}
+
+.welcome {
+  margin: 0em;
+}
+
+
 
