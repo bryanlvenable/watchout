@@ -63,11 +63,11 @@
     left: randX
   })
 
-  gameBoard.on('mouseover', function(){
+  gameBoard.on('mousemove', function(){
     var loc = d3.mouse(this);
     player = {
       x: loc[0],
-      y: loc[1]
+      y: loc[1] // adjust for mouse positioning
     };
     d3.select('.player').style({
       top: pixelize(player.y),

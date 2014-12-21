@@ -28,11 +28,13 @@ body{
   position: absolute;
 }
 .scoreboard {
-  margin: 0em;
+  margin: 1em;
+  color: yellow;
 }
 
 .welcome {
-  margin: 0em;
+  margin: 1em;
+  color: yellow;
 }
 
 
